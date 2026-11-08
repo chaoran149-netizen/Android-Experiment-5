@@ -5,7 +5,7 @@
     <application android:name=".CardGameApplication" android:allowBackup="false" android:label="@string/app_name" android:icon="@drawable/ic_avatar" android:supportsRtl="true" android:theme="@style/AppTheme">
         <activity android:name=".GameActivity" android:exported="false" android:label="@string/game_title" />
         <activity android:name=".EditProfileActivity" android:exported="false" android:label="@string/edit_title" android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".MainActivity" android:exported="true">
+        <activity android:name=".MainActivity" android:theme="@style/HomeTheme" android:exported="true">
             <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
         </activity>
     </application>

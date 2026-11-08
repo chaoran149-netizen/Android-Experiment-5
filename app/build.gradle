@@ -3,7 +3,7 @@ android {
     namespace 'cn.edu.sicnu.cardgame'
     compileSdk 35
     defaultConfig {
-        applicationId 'cn.edu.sicnu.cardgame.lab4'
+        applicationId 'cn.edu.sicnu.cardgame.lab5'
         minSdk 23
         targetSdk 34
         versionCode 1
@@ -13,6 +13,7 @@ android {
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
 }
 dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.6.2'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'

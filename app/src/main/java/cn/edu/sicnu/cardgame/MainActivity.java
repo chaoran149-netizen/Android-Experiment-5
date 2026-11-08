@@ -38,4 +38,12 @@ public class MainActivity extends Activity {
         ((TextView) findViewById(view)).setText(getString(R.string.profile_row, getString(label),
                 value.isEmpty() ? getString(R.string.unfilled) : value));
     }
+    @Override public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        menu.add(0,1,0,R.string.about).setShowAsAction(android.view.MenuItem.SHOW_AS_ACTION_ALWAYS);
+        return true;
+    }
+    @Override public boolean onOptionsItemSelected(android.view.MenuItem item) {
+        if(item.getItemId()==1){new android.app.AlertDialog.Builder(this).setTitle(R.string.about).setMessage(R.string.about_message).setPositiveButton(R.string.ok,null).show();return true;}
+        return super.onOptionsItemSelected(item);
+    }
 }
