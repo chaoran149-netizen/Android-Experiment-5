@@ -20,10 +20,9 @@ public final class Card implements Serializable {
     void setChosen(boolean value) { chosen = value; }
     void setMatched(boolean value) { matched = value; }
     public int match(Card[] others) {
-        if (others == null || others.length != 1 || others[0] == null) return 0;
-        Card other = others[0];
-        if (other.rank == rank) return 4;
-        if (other.suit == suit) return 1;
+        if(others==null || others.length!=2 || others[0]==null || others[1]==null)return 0;
+        if(others[0].rank==rank && others[1].rank==rank)return 6;
+        if(others[0].suit==suit && others[1].suit==suit)return 3;
         return 0;
     }
 }

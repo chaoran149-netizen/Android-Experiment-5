@@ -3,7 +3,7 @@
     <!-- 应用标题：陈浩然2024110203。 -->
     <string name="app_name">陈浩然2024110203</string>
     <string name="main_title">玩家档案</string>
-    <string name="main_subtitle">实验四 · 翻牌游戏</string>
+    <string name="main_subtitle">实验五 · 翻牌游戏</string>
     <string name="profile_note">完善个人信息，开启一局翻牌挑战。</string>
     <string name="edit_title">修改个人信息</string>
     <string name="game_title">翻牌游戏</string>
@@ -71,4 +71,7 @@
     <string name="demo_email" translatable="false">player@example.com</string>
     <string-array name="card_suits" translatable="false"><item>♥</item><item>♦</item><item>♠</item><item>♣</item></string-array>
     <string-array name="card_ranks" translatable="false"><item>A</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item><item>J</item><item>Q</item><item>K</item></string-array>
-</resources>
+<string name="about">关于</string><string name="about_message">实验五 RecyclerView翻牌游戏
+陈浩然 2024110203
+2024级2班
+MVC + RecyclerView.Adapter</string><string name="ok">确定</string><string name="triple_rules">连续翻开三张：同点数奖励24分，同花色奖励12分；每次翻开扣1分，失败另扣2分。可点击已选牌取消。横竖屏牌数改变时自动开始新局。</string><string name="triple_pending">请继续翻牌，凑齐三张进行匹配。</string><string name="triple_match">三张牌匹配成功！</string><string name="triple_fail">三张牌未匹配，已合上。</string></resources>
